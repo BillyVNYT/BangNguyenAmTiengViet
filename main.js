@@ -45,7 +45,7 @@ function speak(letter) {
         audio.play();
     };
 }
-fetch("https://raw.githubusercontent.com/user/repo/main/src/vietnam.svg")
+fetch("src/vietnam.svg")
 .then(res => res.text())
 .then(svg => {
     document.getElementById("map").innerHTML = svg;
