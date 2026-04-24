@@ -1,8 +1,13 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, #fffdf5, #fff3cc);
-    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffffff, #fff4cc);
+    text-align: center;
+}
+
+h1 {
+    color: #e6b800;
+    margin-top: 50px;
 }
 
 /* Layout */
@@ -149,4 +154,8 @@ input {
 .qr img {
     width: 200px;
     border-radius: 10px;
+}
+#map svg {
+  width: 100%;
+  max-width: 800px;
 }

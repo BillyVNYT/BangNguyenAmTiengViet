@@ -7,7 +7,7 @@
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=vi14SUn7"></script>
 </head>
 <body>
-    <div class="main-title">Bảng nguyên âm tiếng Việt</div>
+    <div class="main-title" style="margin-top: 25px; margin-bottom: 25px;">Bảng nguyên âm tiếng Việt</div>
     <div class="container">
         <!-- VOWELS -->
         <div class="section">
@@ -28,34 +28,90 @@
         </div>
 
     </div>
-    <div style="
-        text-align:center;
-        margin-top:40px;
-        padding:20px;
-        background:white;
-        border-radius:20px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    <div class="donate" style="margin-top:30px; width: 90%; max-width: 4000px;">
+        <h2 style="margin-top: 20px;">Viet Nam provices</h2>
+        <div id="map" style="margin-top: -100px;"></div>
+        <h2 id="provinceName" style="margin-top: -125px;">Chọn một tỉnh</h2>
+    </div>
+    <div class="donate" style="margin-top:30px;">
+        <h2>Gõ Tiếng Việt 🇻🇳</h2>
+        <p>If you are a foreigner, you can use UniKey to type Vietnamese easily.</p>
+        <p>UniKey is free software that helps you type Vietnamese characters with diacritics on your computer.</p>
+
+        <a href="https://unikey.org/" target="_blank">
+            <button>Download UniKey</button>
+        </a>
+
+        <p style="margin-top:15px; font-size:14px;">
+            How to write:<br>
+            - Type to typing: Telex<br>
+            - Ex: a + s = á, a + f = à
+        </p>
+    </div>
+    <footer style="
+    margin-top:60px;
+    background:white;
+    border-top:2px solid #eee;
+    padding:0;
     ">
 
-        <h2 style="color:#d4a017;">💛 Ủng hộ dự án</h2>
-
-        <img src="src/QRmomo.jpg" alt="QR MoMo" style="
-            width:220px;
-            border-radius:20px;
-            margin-top:10px;
-        ">
-        <img src="src/QRpaypal.jpg" alt="QR Paypal" style="
-            width:220px;
-            border-radius:20px;
-            margin-top:10px;
-            margin-left: 50px;
+        <div style="
+            display:flex;
+            justify-content:space-between;
+            gap:0;
+            max-width:900px;
+            margin:auto;
+            overflow:hidden;
+            border-radius:0;
         ">
 
-        <p style="color:#888; margin-top:10px;">
-            Quét mã MoMo hoặc Paypal để ủng hộ 💛
-        </p>
+            <!-- DONATE -->
+            <div style="
+                flex:1;
+                text-align:center;
+                padding:20px;
+                border-right:1px solid #eee;
+            ">
+                <h3 style="color:#d4a017;">💛 Donate</h3>
 
-    </div>
+                <img src="src/QRmomo.jpg" style="width:160px;border-radius:15px;">
+                <img src="src/QRpaypal.jpg" style="width:160px;border-radius:15px;margin-top:10px; margin-left: 25px;">
+
+                <p style="color:#888;font-size:14px;">
+                    MoMo / PayPal
+                </p>
+            </div>
+
+            <!-- CONTACT -->
+            <div style="
+                flex:1;
+                text-align:center;
+                padding:20px;
+            ">
+                <h3 style="color:#1e88e5;">📞 Contact</h3>
+
+                <img src="src/anhcontact.jpg" style="
+                    width:100px;
+                    height:100px;
+                    border-radius:50%;
+                    object-fit:cover;
+                    margin-top:10px;
+                    border:3px solid #1e88e5;
+                ">
+
+                <p style="margin-top:10px;color:#444;font-size:14px;">
+                    Dạy tiếng Việt cho người nước ngoài 🇻🇳
+                </p>
+
+                <p style="color:#888;font-size:13px;">
+                    Email: you@gmail.com<br>
+                    FB: your link
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>

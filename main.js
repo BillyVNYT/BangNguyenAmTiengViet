@@ -45,3 +45,19 @@ function speak(letter) {
         audio.play();
     };
 }
+fetch("src/vietnam.svg")
+.then(res => res.text())
+.then(svg => {
+    document.getElementById("map").innerHTML = svg;
+
+    const paths = document.querySelectorAll("path");
+
+    paths.forEach(p => {
+        p.style.cursor = "pointer";
+
+        p.addEventListener("click", () => {
+        const name = p.getAttribute("name");
+        document.getElementById("provinceName").innerText = name;
+        });
+    });
+});
