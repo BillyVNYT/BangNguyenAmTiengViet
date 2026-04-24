@@ -45,3 +45,16 @@ function speak(letter) {
         audio.play();
     };
 }
+function selectAmount(amount) {
+    selectedAmount = amount;
+    document.getElementById("customAmount").value = "";
+
+    document.querySelectorAll(".amount").forEach(el => el.classList.remove("active"));
+    event.target.classList.add("active");
+}
+
+function donate() {
+    const message = "Day la tien donate cua trang nguyen am tieng Viet";
+    const url = "https://www.paypal.com/donate?business=trangnn.ulis@gmail.com&item_name=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}

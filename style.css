@@ -68,3 +68,85 @@ body {
 .main-title {
     text-shadow: 0 3px 10px rgba(212,160,23,0.3);
 }
+/* Donate section giống card */
+.donate {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: white;
+    border: 2px solid #ffd966;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.donate h2 {
+    color: #e6b800;
+}
+
+.amounts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.amount {
+    padding: 10px 20px;
+    border: 2px solid #ffd966;
+    border-radius: 15px;
+    cursor: pointer;
+    background: white;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.amount:hover {
+    transform: scale(1.05);
+    background: #fff8dc;
+}
+
+.amount.active {
+    background: #ffd966;
+}
+
+.custom-box {
+    margin-top: 10px;
+    padding: 15px;
+    border: 2px dashed #ffd966;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.donate button {
+    background: #ffd966;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.donate button:hover {
+    background: #ffcc00;
+}
+
+.qr {
+    margin-top: 15px;
+    display: none;
+}
+
+.qr img {
+    width: 200px;
+    border-radius: 10px;
+}
