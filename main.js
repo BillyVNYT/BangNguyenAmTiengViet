@@ -30,7 +30,7 @@ createCards(consonants, "consonants");
 createCards(diphthongs, "diphthongs");
 
 function speak(letter) {
-    const path = "src/" + letter + ".m4a";
+    const path = "src/" + letter.toUpperCase() + ".m4a";
 
     console.log("Đang load:", path);
 
