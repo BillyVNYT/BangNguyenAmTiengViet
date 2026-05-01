@@ -61,6 +61,3 @@ fetch("./src/vietnam.svg")
         });
     });
 });
-if (sessionStorage.getItem("admin") !== "true") {
-    window.location.href = "admin-login.html";
-}

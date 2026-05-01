@@ -28,6 +28,3 @@ runTransaction(viewsRef, (currentViews) => {
 runTransaction(dailyRef, (currentDaily) => {
     return (currentDaily || 0) + 1;
 });
-if (sessionStorage.getItem("admin") !== "true") {
-    window.location.href = "admin-login.html";
-}
